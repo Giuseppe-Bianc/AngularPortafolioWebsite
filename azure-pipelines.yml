@@ -16,3 +16,7 @@ steps:
     ng build --prod
   displayName: 'npm install and build'
 
+- script: |
+    npm install -g codecov
+    codecov
+  displayName: 'Run Codecov for code coverage'
