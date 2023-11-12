@@ -1,17 +1,8 @@
 trigger:
 - main
 
-strategy:
-  matrix:
-    windows:
-      vmImage: 'windows-latest'
-    linux:
-      vmImage: 'ubuntu-latest'
-    mac:
-      vmImage: 'macOS-latest'
-
 pool:
-  vmImage: $(vmImage)
+  vmImage: 'windows-latest'
 
 steps:
 - task: NodeTool@0
